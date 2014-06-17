@@ -35,7 +35,7 @@ namespace DemoSolution
                         {
                             var model = document.GetSemanticModelAsync().Result;
                             // The following line crashes when using 
-                            //  Microsoft.Bcl.Metadata.1.0.11-alpha
+                            //  Microsoft.Bcl.Metadata.1.0.11-alpha and Roslyn 0.6
                             // it works fine when using
                             // Microsoft.Bcl.Metadata.1.0.9 - alpha
                             string fullName = model.GetDeclaredSymbol(currentClass).ToString();
